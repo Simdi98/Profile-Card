@@ -1,0 +1,172 @@
+:root {
+  --cardcolor: #f5f5f5;
+  --fontColor: #333;
+  --grey: #909090;
+}
+
+* {
+  margin: 0;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #555;
+}
+
+.profile-card {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 253, 208, 0.5);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #354352;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.profile-info {
+  margin-top: 20px;
+  background-color: #FFF8E7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.full-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #244d78;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.short-bio {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.current-location {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.email-address {
+  font-size: 16px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.email-address:hover{
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 20px;
+  background-color: #e5e5e5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.social-links a {
+  font-size: 24px;
+  color: #337ab7;
+  margin-right: 10px;
+  transition: color 0.2s ease;
+}
+
+.social-links .fa-twitter{
+  color: #1da1f2;
+}
+
+.social-links .fa-linkedin{
+  color: #2867b2;
+}
+
+.social-links .fa-github{
+  color: #181717;
+}
+
+.social-links i:hover {
+  color: #879eb1;
+  text-decoration: wavy;
+}
+
+.current-time {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666;
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#utc-time {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    margin: 20px auto;
+  }
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .profile-card {
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+  .full-name {
+    font-size: 18px;
+  }
+  .job-title {
+    font-size: 14px;
+  }
+  .short-bio {
+    font-size: 12px;
+  }
+  .current-location {
+    font-size: 12px;
+  }
+  .email-address {
+    font-size: 12px;
+  }
+}

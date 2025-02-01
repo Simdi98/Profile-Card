@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="profile-card" data-test-id="profile-card">
+      <div class="profile-picture" data-test-id="profile-picture">
+        <img
+          src="Images/B5217C19-FD8E-4A2E-9FD0-9BC971A5AD7A_1_105_c.jpeg"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="profile-info" data-test-id="profile-info">
+        <h2 class="full-name" data-test-id="full-name">Chisimdi Okoye</h2>
+        <p class="job-title" data-test-id="job-title">Frontend Developer</p>
+        <p class="short-bio" data-test-id="short-bio">
+          Frontend developer with experience in HTML, CSS, JavaScript and React.
+          Delivers responsive, user-friendly, high-quality interfaces.
+          Passionate about building beautiful and functional web experiences.
+        </p>
+        <p class="current-location" data-test-id="current-location">
+          <i class="fas fa-map-marker-alt"></i>Lagos, Nigeria
+        </p>
+        <a
+          class="email-address"
+          href="mailto:okoyechisimdi@gmail.com"
+          data-test-id="email-address"
+        >
+          <i class="fas fa-envelope"></i>okoyechisimdi@gmail.com</a
+        >
+        <div class="social-links" data-test-id="social-links">
+          <a
+            href="https://x.com/jc_simdi?s=11"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/chisimdi-okoye-a76a98241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Simdi98"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <div class="current-time" data-test-id="current-time">
+        <p>Current Time (UTC): <span id="utc-time"></span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
